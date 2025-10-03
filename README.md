@@ -1,7 +1,27 @@
 PC Manizer GX
 ================
 
-Professional, privacy‑first image editing in your browser. Upload, crop, customize, and download in seconds — optimized for creators and gamers.
+Fast, privacy‑first image editing in your browser. Upload, crop, customize, and download in seconds — optimized for creators and gamers.
+
+[![Built with Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)](https://www.typescriptlang.org/) [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
+Table of Contents
+-----------------
+
+- [PC Manizer GX](#pc-manizer-gx)
+  - [Table of Contents](#table-of-contents)
+  - [Getting Started](#getting-started)
+  - [Project Structure](#project-structure)
+  - [Features](#features)
+  - [Screenshots](#screenshots)
+    - [Hero](#hero)
+    - [Features Grid](#features-grid)
+    - [Upload / Try It Now](#upload--try-it-now)
+    - [Gaming / Community Sections](#gaming--community-sections)
+    - [Call To Action](#call-to-action)
+  - [Environment \& Commands](#environment--commands)
+  - [Tech Stack](#tech-stack)
+  - [License](#license)
 
 Getting Started
 ---------------
@@ -33,35 +53,42 @@ Project Structure
 - `app/` Next.js App Router pages and layout
 - `components/` UI and page sections
 - `public/` static assets
-  - `public/screenshot/` screenshots used in this README
+  - `public/screenshots/` screenshots used in this README
 - `styles/` global CSS
+
+Features
+--------
+
+- Lightning‑fast client‑only processing
+- Precision cropping and pro‑grade filters
+- No sign‑up required; works fully in the browser
 
 Screenshots
 -----------
 
-Drop your screenshots into `public/screenshot/`. Use any filenames; below are example placeholders you can replace. Once added, GitHub will render them here.
+Place images in `public/screenshots/`. If filenames contain spaces, they are URL‑encoded below so GitHub renders them correctly.
 
 ### Hero
 
-![Hero](public/screenshot/Captura de pantalla 2025-10-03 161103.png)
+![Hero](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161103.png)
 
 ### Features Grid
 
-![Features](public/screenshot/Captura de pantalla 2025-10-03 161124.png)
+![Features](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161124.png)
 
 ### Upload / Try It Now
 
-![Upload](public/screenshot/Captura de pantalla 2025-10-03 161145.png)
+![Upload](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161145.png)
 
 ### Gaming / Community Sections
 
-![Gaming](public/screenshot/Captura de pantalla 2025-10-03 161246.png)
-![Community](public/screenshot/Captura de pantalla 2025-10-03 161308.png)
+![Gaming](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161246.png)
+![Community](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161308.png)
 
 
 ### Call To Action
 
-![CTA](public/screenshot/Captura de pantalla 2025-10-03 161329.png)
+![CTA](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161329.png)
 
 Environment & Commands
 ----------------------
@@ -69,4 +96,15 @@ Environment & Commands
 - `pnpm dev` start dev server
 - `pnpm build` production build
 - `pnpm start` run production server
+
+Tech Stack
+----------
+
+- Next.js App Router, React, TypeScript
+- Tailwind CSS + Radix UI (shadcn/ui components)
+
+License
+-------
+
+MIT
 
