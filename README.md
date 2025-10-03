@@ -53,7 +53,6 @@ Project Structure
 - `app/` Next.js App Router pages and layout
 - `components/` UI and page sections
 - `public/` static assets
-  - `public/screenshots/` screenshots used in this README
 - `styles/` global CSS
 
 Features
