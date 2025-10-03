@@ -80,11 +80,13 @@ Place images in `public/screenshots/`. If filenames contain spaces, they are URL
 
 ![Upload](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161145.png)
 
-### Gaming / Community Sections
+### Gaming 
 
 ![Gaming](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161246.png)
-![Community](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161308.png)
 
+### Community Sections
+
+![Community](public/screenshots/Captura%20de%20pantalla%202025-10-03%20161308.png)
 
 ### Call To Action
 
