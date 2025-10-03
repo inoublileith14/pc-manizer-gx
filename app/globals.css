@@ -1,0 +1,250 @@
+@import "tailwindcss";
+/* Removed invalid tw-animate-css import - animations are handled by tailwindcss-animate package */
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Enhanced Opera GX color tokens with authentic neon colors */
+  --background: oklch(0.12 0 0); /* Deep dark background */
+  --foreground: oklch(0.98 0 0); /* Bright white text */
+  --card: oklch(0.16 0 0); /* Slightly lighter card background */
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.16 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+
+  /* Opera GX signature neon red */
+  --primary: oklch(0.58 0.24 12); /* #FF1F40 - Neon Red */
+  --primary-foreground: oklch(0.98 0 0);
+
+  /* Neon pink accent */
+  --accent: oklch(0.62 0.28 340); /* #FF006E - Neon Pink */
+  --accent-foreground: oklch(0.98 0 0);
+
+  /* Cyan secondary */
+  --secondary: oklch(0.78 0.15 195); /* #00D9FF - Cyan */
+  --secondary-foreground: oklch(0.12 0 0);
+
+  --muted: oklch(0.24 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --destructive: oklch(0.58 0.24 12);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.28 0 0);
+  --input: oklch(0.28 0 0);
+  --ring: oklch(0.58 0.24 12);
+
+  --chart-1: oklch(0.58 0.24 12);
+  --chart-2: oklch(0.62 0.28 340);
+  --chart-3: oklch(0.78 0.15 195);
+  --chart-4: oklch(0.68 0.2 280);
+  --chart-5: oklch(0.72 0.18 160);
+
+  --radius: 0.375rem; /* Sharper corners for tech aesthetic */
+
+  --sidebar: oklch(0.16 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.58 0.24 12);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.24 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.28 0 0);
+  --sidebar-ring: oklch(0.58 0.24 12);
+
+  /* Gaming color variables from user's file */
+  --gaming-red: #ff0040;
+  --gaming-orange: #ff6b35;
+  --gaming-yellow: #ffd23f;
+  --gaming-purple: #8b5cf6;
+  --gaming-blue: #3b82f6;
+}
+
+.dark {
+  --background: oklch(0.12 0 0);
+  --foreground: oklch(0.98 0 0);
+  --card: oklch(0.16 0 0);
+  --card-foreground: oklch(0.98 0 0);
+  --popover: oklch(0.16 0 0);
+  --popover-foreground: oklch(0.98 0 0);
+  --primary: oklch(0.58 0.24 12);
+  --primary-foreground: oklch(0.98 0 0);
+  --secondary: oklch(0.78 0.15 195);
+  --secondary-foreground: oklch(0.12 0 0);
+  --muted: oklch(0.24 0 0);
+  --muted-foreground: oklch(0.65 0 0);
+  --accent: oklch(0.62 0.28 340);
+  --accent-foreground: oklch(0.98 0 0);
+  --destructive: oklch(0.58 0.24 12);
+  --destructive-foreground: oklch(0.98 0 0);
+  --border: oklch(0.28 0 0);
+  --input: oklch(0.28 0 0);
+  --ring: oklch(0.58 0.24 12);
+  --chart-1: oklch(0.58 0.24 12);
+  --chart-2: oklch(0.62 0.28 340);
+  --chart-3: oklch(0.78 0.15 195);
+  --chart-4: oklch(0.68 0.2 280);
+  --chart-5: oklch(0.72 0.18 160);
+  --sidebar: oklch(0.16 0 0);
+  --sidebar-foreground: oklch(0.98 0 0);
+  --sidebar-primary: oklch(0.58 0.24 12);
+  --sidebar-primary-foreground: oklch(0.98 0 0);
+  --sidebar-accent: oklch(0.24 0 0);
+  --sidebar-accent-foreground: oklch(0.98 0 0);
+  --sidebar-border: oklch(0.28 0 0);
+  --sidebar-ring: oklch(0.58 0.24 12);
+}
+
+@theme inline {
+  /* Updated font variables to match new font imports */
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-jetbrains-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Enhanced Opera GX visual effects */
+@layer utilities {
+  /* Neon glow effects with authentic Opera GX colors */
+  .glow-primary {
+    box-shadow: 0 0 20px rgba(255, 31, 64, 0.6), 0 0 40px rgba(255, 31, 64, 0.3);
+  }
+
+  .glow-accent {
+    box-shadow: 0 0 20px rgba(255, 0, 110, 0.6), 0 0 40px rgba(255, 0, 110, 0.3);
+  }
+
+  .glow-secondary {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.6), 0 0 40px rgba(0, 217, 255, 0.3);
+  }
+
+  .glow-primary-strong {
+    box-shadow: 0 0 30px rgba(255, 31, 64, 0.8), 0 0 60px rgba(255, 31, 64, 0.5), 0 0 90px rgba(255, 31, 64, 0.3);
+  }
+
+  .glow-accent-strong {
+    box-shadow: 0 0 30px rgba(255, 0, 110, 0.8), 0 0 60px rgba(255, 0, 110, 0.5), 0 0 90px rgba(255, 0, 110, 0.3);
+  }
+
+  .glow-secondary-strong {
+    box-shadow: 0 0 30px rgba(0, 217, 255, 0.8), 0 0 60px rgba(0, 217, 255, 0.5), 0 0 90px rgba(0, 217, 255, 0.3);
+  }
+
+  /* Tech grid background */
+  .tech-grid {
+    background-image: linear-gradient(rgba(255, 31, 64, 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 31, 64, 0.05) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  /* Scan line effect */
+  .scan-lines::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(transparent 50%, rgba(255, 31, 64, 0.03) 50%);
+    background-size: 100% 4px;
+    pointer-events: none;
+    z-index: 1;
+  }
+
+  /* Angular border effect */
+  .angular-border {
+    clip-path: polygon(
+      0 8px,
+      8px 0,
+      calc(100% - 8px) 0,
+      100% 8px,
+      100% calc(100% - 8px),
+      calc(100% - 8px) 100%,
+      8px 100%,
+      0 calc(100% - 8px)
+    );
+  }
+
+  /* Glitch text effect */
+  @keyframes glitch {
+    0%,
+    100% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, 2px);
+    }
+    80% {
+      transform: translate(2px, -2px);
+    }
+  }
+
+  .glitch-text:hover {
+    animation: glitch 0.3s ease-in-out;
+  }
+}
+
+/* Custom scrollbar with Opera GX styling */
+@layer base {
+  ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: oklch(0.16 0 0);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: oklch(0.58 0.24 12);
+    border-radius: 6px;
+    border: 2px solid oklch(0.16 0 0);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: oklch(0.62 0.28 340);
+  }
+}
